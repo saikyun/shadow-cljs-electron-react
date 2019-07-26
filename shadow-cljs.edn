@@ -1,0 +1,28 @@
+;; shadow-cljs configuration
+{:source-paths
+ ["src"]
+ 
+ :dependencies
+ [[reagent "0.8.1" :exclusions [cljsjs/react cljsjs/react-dom]]]
+ 
+ :builds
+ {:main
+  {:target :node-script
+   :output-to "app/main.js"
+   :main example.main/main
+   :devtools
+   {:before-load example.main/stop
+    :after-load example.main/start}}
+  
+  :renderer
+  {:target :browser
+   :output-dir "app/js"
+   :asset-path "js"
+   
+   :modules
+   {:renderer {:entries [example.renderer]}}
+   
+   :devtools
+   {:before-load example.renderer/stop
+    :after-load example.renderer/start}}
+  }}

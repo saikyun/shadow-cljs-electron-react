@@ -1,0 +1,21 @@
+{
+  "name": "electron-cljs",
+  "version": "1.0.0",
+  "main": "app/main.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "watch": "shadow-cljs watch main renderer"
+  },
+  "devDependencies": {
+    "electron": "^5.0.6",
+    "shadow-cljs": "^2.8.40"
+  },
+  "dependencies": {
+    "create-react-class": "^15.6.3",
+    "react": "^16.8.6",
+    "react-calendar": "^2.19.0",
+    "react-dom": "^16.8.6",
+    "react-split-pane": "^0.1.87"
+  }
+}

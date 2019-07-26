@@ -1,0 +1,5 @@
+app/main.js
+app/js/
+target/
+node_modules/
+.shadow-cljs/
