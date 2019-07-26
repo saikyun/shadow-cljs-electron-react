@@ -1,10 +1,8 @@
-# Electron + shadow-cljs
+# Electron + shadow-cljs + react
 
-Pretty much just https://electron.atom.io/docs/tutorial/quick-start/ in CLJS.
+Based on [the shadow-cljs electron example](https://github.com/shadow-cljs/examples/tree/master/electron).
 
 ```
-yarn global add electron
-yarn global add shadow-cljs
 yarn
 
 # leave this running
